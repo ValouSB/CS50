@@ -1,5 +1,15 @@
 # CS50
 HarvardX - CS50x
+PSet0 : 1.0
+PSet1 : 1.0
+PSet2 : 1.0
+PSet3 : 1.0
+PSet4 : 1.0
+PSet5 : 1.0
+PSet6 : 0.92
+PSet7 : 1.0
+PSet8 : 1.0
+Final Project : 1.0
 
 # Academic Honesty
 This course’s philosophy on academic honesty is best stated as "be reasonable." The course recognizes that interactions with classmates and others can facilitate mastery of the course’s material. However, there remains a line between enlisting the help of another and submitting the work of another. This policy characterizes both sides of that line.
