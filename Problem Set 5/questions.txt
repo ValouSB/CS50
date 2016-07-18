@@ -1,0 +1,41 @@
+0. What is pneumonoultramicroscopicsilicovolcanoconiosis?
+    -> According to Merriam-Webster's Medical Dictionary, pneumonoultramicroscopicsilicovolcanoconiosis is a pneumoconiosis caused by inhalation of very fine silicate or quartz dust.
+
+1. According to its man page, what does getrusage do?
+    -> According to its man page, "getrusage()"  returns used ressources 
+
+2. Per that same man page, how many members are in a variable of type struct rusage?
+    -> A variable of type struct rusage contains 16 data types
+
+3. Why do you think we pass before and after by reference (instead of by value) to calculate, even though we’re not changing their contents?
+    -> I think that you pass before and after by reference instead of by value to calcultate because it ssaves time and ressource, and avoid crashes
+
+4. Explain as precisely as possible, in a paragraph or more, how main goes about reading words from a file. In other words, convince us that you indeed understand how that function’s for loop works.
+    -> To read a word from a file, a pointer is used. This pointer starts at the beginning of the word and ends when a new line is encountered (\ n). When this happens, we replace \ n with \ o and incrementing the number of words read
+
+5. Why do you think we used fgetc to read each word’s characters one at a time rather than use fscanf with a format string like "%s" to read whole words at a time? Put another way, what problems might arise by relying on fscanf alone?
+    -> I think you didn't choose fscan because it read until a white space or special character, that would cause problem with other functions (like mispelling). fgetc resolve this problem
+
+6. Why do you think we declared the parameters for check and load as const?
+    -> I think that you declared the parameters for check and load as constants because they should not be modify. (it is a kind of sanity check)
+
+7. What data structure(s) did you use to implement your spell-checker? Be sure not to leave your answer at just "hash table," "trie," or the like. Expound on what’s inside each of your "nodes."
+    -> To implement my spell-checker i used a hashtable with pointers to saves time espacially to load the specified dictionarie (in input).
+
+8. How slow was your code the first time you got it working correctly?
+    -> the first time my code worked perfectly, it took about 20 seconds.
+
+9. What kinds of changes, if any, did you make to your code in order to improve its performance?
+    -> Currently, my code take is execute in 0.07 seconds. I improve the hash and I simplify code.
+    
+        WORDS MISSPELLED:     644
+        WORDS IN DICTIONARY:  143091
+        WORDS IN TEXT:        19190
+        TIME IN load:         0.04
+        TIME IN check:        0.02
+        TIME IN size:         0.00
+        TIME IN unload:       0.00
+        TIME IN TOTAL:        0.06
+
+10. Do you feel that your code has any bottlenecks that you were not able to chip away at?
+    -> I think my code has some bottlenecks taht i'm not able to chip away at, especially in the load function with the hashtable.
